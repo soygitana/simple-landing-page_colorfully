@@ -4,20 +4,33 @@
 }
 
 .center {
-    max-width: 1150px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
 
 body {
     font-family: "Open Sans", sans-serif;
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 a:hover {
     cursor: pointer;
 }
 
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+
+}
 
 .btn {
     width: 145px;
@@ -98,7 +111,7 @@ a:hover {
 
 }
 
-.banner-container {
+.container {
     height: 500px;
     flex-grow: 1;
     display: flex;
@@ -110,7 +123,7 @@ a:hover {
 
     display: flex;
     flex-direction: column;
-    margin-top: -100px;
+     margin-top: -100px; 
 
 }
 
@@ -191,6 +204,8 @@ a:hover {
     display: block;
     position: absolute;
     top: calc(50% - 5px);
+    left: -2px;
+
 }
 
 .line-decoration::after {
@@ -211,6 +226,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 10%;
 }
 
 .service-box {
@@ -227,7 +243,7 @@ a:hover {
 }
 
 .service-container .box-title {
-    padding-top: 50px;
+    padding-top: 50px; 
     font-size: 20px;
 }
 
@@ -237,4 +253,336 @@ a:hover {
     font-weight: 300;
     text-align: center;
     line-height: 1.5;
+}
+
+.service-container .banner-btn {
+width: 100px;
+height: 40px;
+line-height: 40px;
+}
+
+.portfolio-header {
+    color: white;
+background-color: rgb(150, 146, 146);
+background-image: url(../images/pattern\ parallax.png);
+background-size: cover;
+}
+
+.portfolio-header .section-title {
+    padding-top: 10%;
+    font-size: 45px;
+}
+
+.portfolio-header .section-text {
+    padding-bottom: 10%;
+    font-size: 25px;
+}
+
+
+.portfolio  {
+    color: rgb(41, 41, 41);
+}
+
+
+.portfolio .line-decoration {
+border-bottom: 1px solid black;
+    }
+
+    
+.portfolio .line-decoration::before
+  {
+    background-color: rgb(41, 41, 41);
+
+}
+
+.portfolio .line-decoration::after
+  {
+    background-color:rgb(41, 41, 41);
+}
+
+
+.portfolio-title {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #c2c0c0;
+}
+
+.portfolio-title span {
+color: rgb(41, 41, 41);
+}
+
+
+
+.portfolio-container {
+width: 100%;
+flex-grow: 1;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+
+.portfolio-box:nth-of-type(1) {
+    background-color: #505f83;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.portfolio-box .box-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+
+
+.portfolio-box i {
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+  
+}
+
+.portfolio-box {
+    background-color: #7b7b7b;
+    width: 30%;
+    min-height: 300px;
+    display: flex;
+    border: 1px solid #969696;
+    margin-bottom: 40px;
+}
+
+.portfolio-broswe {
+    margin: 40px 0;
+    width: 200px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: calc(50% - 100px);
+}
+
+.portfolio-broswe p {
+    font-weight: 700;
+}
+
+.portfolio-broswe i {
+    font-size: 30px;
+    color:  rgb(41, 41, 41);
+}
+
+
+.testimonial {
+    color:  rgb(41, 41, 41);
+    padding-top: 8%;
+}
+
+.testimonial .section-title {
+  font-size: 35px;
+}
+
+
+.testimonial .section-text {
+    font-size: 18px;
+  }
+  
+
+    
+.testimonial .line-decoration
+  {
+    border-bottom:1px solid  rgb(41, 41, 41);
+}
+
+.testimonial .line-decoration::before
+  {
+    background-color: rgb(41, 41, 41);
+
+}
+
+.testimonial .line-decoration::after
+  {
+    background-color:rgb(41, 41, 41);
+}
+
+
+.slider {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+
+
+.contact-header {
+    background-color: rgb(150, 146, 146);
+    background-image: url(../images/pattern\ parallax.png);
+    background-size: cover;
+    }
+    
+    .contact-header .section-title {
+        padding-top: 10%;
+        font-size: 45px;
+    }
+    
+    .contact-header .section-text {
+        padding-bottom: 10%;
+        font-size: 25px;
+    }
+    
+
+    .map {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .contact {
+        background-color: #475a85;
+    }
+
+    .page-footer {
+    width: 100%;
+    height: 150px;
+    background: #000;            
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.page-footer .copy-right {
+    padding-top: 40px;
+    display: flex;
+    opacity: 0.5;
+}
+
+
+.page-footer .footer-logo {
+    opacity: 0.5;
+}
+
+
+
+.form-left {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+
+}
+
+
+.form-right {
+
+    display: flex;
+
+
+}
+
+.form-img {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(196, 187, 187);
+    border-radius: 5%;
+}
+
+.form-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.form-text {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.form-btn {
+    margin-top: 30px;
+}
+
+
+
+.form-left p {
+    padding-top: 20px;
+    font-size: 14px;
+  color:  rgb(194, 194, 194);
+}
+
+
+.form-left p:nth-child(1) { 
+  color: white;
+}
+
+
+
+.form-left i {
+    padding-right: 10px;
+}
+
+.social-box {
+    width: 120px;
+    height: 100px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.social-box div {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 50%;
+
+}
+
+.social-box a:hover div {
+    background-color:white;
+}
+
+
+.social-box i {
+   color:  #475a85;
+  line-height: 30px;
+width: 40px;
+  text-align: center;
+}
+
+.form-right {
+    display: flex;
+  
+
+flex-direction:column;
+justify-content: space-around;
+align-items: center;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 250px;
+}
+
+
+
+.form textarea {
+    width: 600px;
+}
+
+.form-btn {
+    margin-top: 20px;
 }
